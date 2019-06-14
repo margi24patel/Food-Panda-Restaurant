@@ -1,0 +1,79 @@
+
+.banner-img {
+  text-align:center;
+}
+.container_slider{
+  width:100%;
+  height:400px;
+  margin: 0 auto;
+  z-index:1;
+}
+.slider-outer{
+   height:100% !important;
+   
+  overflow:hidden;
+}
+.slider{
+ 
+    width: 100%;
+    height: 100%;
+    
+}
+.slide-image{
+  width: 100%;
+    height: 100%;
+   display:block;
+    color: transparent;
+    background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+}
+.slider .slide-item{
+  float:left;
+    padding: 0;
+    margin: 0;
+}
+.clear{
+  clear:both;
+}
+.plate{
+	z-index:3;
+	position:absolute;
+	top:360px;
+	left:540px;
+}
+#welcome_screen{
+	background-image:url("css_images/bg.png");
+	height: 450px;
+	font-size:1.5em;
+}
+#welcome_screen h2{
+	font:normal 2.5em Lucida Calligraphy, Helvetica, sans-serif;
+}
+#icecream {
+	float:right;
+	height:175px;
+	widht:auto;
+}
+/* Gallery style */
+#container{
+	margin: 0 auto;
+	padding-top: 0px;
+	background-image:url("css_images/bg.png");
+}
+.food_gallery_size{
+	width:100px;
+}
+}
+#gallery{
+	padding: 0px;
+	background-image:url("css_images/bg.png");
+
+}
+
+
+

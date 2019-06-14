@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<title>Food Panda</title>
+	<link rel="stylesheet" type="text/css" href="css/global.css">
+	<link rel="stylesheet" href="css/giftcard.css" />
+	
+  </head>
+  <body>
+    <header id="header">
+      <div class="page-wrapper">
+	    <a href="/"><img id="logo" src="images/Panda.png" alt="Restaurant Logo"></a>
+		<h2 id="logo_title">Food Panda</h2>
+	  
+	  <nav id="main-menu">
+          <h2 class="hidden">Main navigation</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="special.html">Special</a></li>
+            <li><a href="giftcard.html">Gift Cards</a></li>
+            <li><a href="EventBooking.html">Event Booking</a></li>
+            <li><a href="contest.html">Contest</a></li>
+            <li><a href="Location.html">Location</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="Careers.html">Careers</a></li>
+            <li><a href="sitemap.html">Site Map</a></li>
+          </ul>
+        </nav>
+	  </div>
+	</header>
+	<div class="container_slider">
+		  <div class="slider-outer">
+			<div class="slider">
+			  <div class="slide-item"><span class="slide-image" style="background-image: url(images/gift_cards/banner3.jpg);"></span></div>
+			  <div class="slide-item"><span class="slide-image" style="background-image: url(images/gift_cards/banner6.jpg);"></span></div>
+			  <div class="slide-item"><span class="slide-image" style="background-image: url(images/gift_cards/banner4.jpg);"></span></div>
+			</div>
+		  </div>
+	  </div>
+	
+	<!-- Ekta Patel -->
+	<div class="page-wrapper">
+	<form id="giftcard-form" action="#" method="get"><br/>
+	<fieldset class="fieldset">
+	<legend>Gift card</legend>
+	  
+		<!-- It will display gift card which you select from the gift cards section -->
+	  <div class="preview">
+	   <p>Preview</p>
+			<img id="mainImg" src="images/gift_cards/g1.jpg" alt="My Gift card" />
+	 </div>
+	 <!-- Bunch of gift cards to select your favourite -->
+	 <label for="">Choose a design:</label>
+	 <div id="gallery" onclick="changeImage(event)">
+			<img id="pic1" src="images/gift_cards/g1.jpg" width="200px" alt="Gift card"/>
+			<img id="pic2" src="images/gift_cards/g2.jpg" width="200px" alt="Gift card"/>
+			<img id="pic3" src="images/gift_cards/g3.jpg" width="200px" alt="Gift card"/>
+			<img id="pic4" src="images/gift_cards/g9.jpg" width="200px" alt="Gift card"/>
+			<img id="pic4" src="images/gift_cards/g12.jpg" width="200px" alt="Gift card"/>
+			<img id="pic4" src="images/gift_cards/g13.jpg" width="200px" alt="Gift card"/>
+			<img id="pic4" src="images/gift_cards/g4.jpg" width="200px" alt="Gift card"/>
+		</div>
+		<p>
+		<!-- In value textbox you can write any amount you want or select from the options given below -->
+	    <label for="">Select a value:</label>
+		<input id="card_amt" type="text" placeholder="$" >
+		
+		<ul class="gift_card_amt" >
+			<li>
+				<label for="a25">
+					<input type="radio" id="a25" name="amount" value="25" />$25</label>
+			</li>
+			<li>
+				<label for="a50">
+					<input type="radio" id="a50" name="amount" value="50" >$50</label>
+			</li>
+			<li>
+				<label for="a75">
+					<input type="radio" id="a75" name="amount" value="75" >$75</label>
+			</li>
+			<li>
+				<label for="a100">
+					<input type="radio" id="a100" name="amount" value="100" >$100</label>
+			</li>
+		</ul>
+		</p>
+	  <p>
+		<label for="qty">Quantity:</label>
+		<input id="qty" type="number" min="1" max="10">
+	  </p>
+	  <p>
+		<label for="msg">Message:</label><br/>
+	  
+		<textarea id="msg" name="message"></textarea>
+	  </p>
+	  <p>
+		<label for="">Dlivery option:</label>
+		<select id="delivery_option">
+            <option value="Email">Email</option>
+            <option value="Mail">Mail</option>
+        </select>
+	  </p>
+	  <p>
+		<label for="receipient_name">Receipient name:</label>
+		<input id="receipient_name" type="text" >
+	  </p>
+	  <p>
+		<label for="sender_name">Sender name:</label>
+		<input id="sender_name" type="text" >
+	  </p>
+	  <p>
+		<label for="email">Email:</label>
+		<input id="email" type="email" >
+	  </p>
+	  <p>
+		<label for="address">Address:</label>
+		<input id="address" type="text" >
+	  </p>
+	  <p>
+		<label for="pc">Postal code:</label>
+		<input id="pc" type="text" >
+	  </p>
+	  <p>
+		<label for="">Delivery date:</label>
+		<input id="delivery_date" type="date" >
+	  </p>
+	  <p>
+		<button type="submit" id="message_btn">SUBMIT</button>
+	  </p>
+		
+	  </fieldset>
+	</form>
+	
+	 <!-- OUTPUT MESSAGE (HIDDEN UNTIL FORM VALIDATES AND SUBMITTED)  -->
+		<div id="thanks_msg">
+			<div>
+				
+				<p><h2 id="thanksCustomer"></h2></p>
+				<p><span id="cReceipient"></span></p>
+				<p><span id="cSender"></span></p>
+				<p><span id="cDeliveryBy"></span></p>
+				<p><span id="cDeliveryDate"></span></p>
+			</div>
+			<span id="total"></span>
+		</div>
+	  
+	</div>
+	
+<footer id="footer">
+	<div class="page-wrapper">
+	<div class="col-1-footer">
+		<p id="logo_bottom">Food Panda</p>
+	</div> 
+	  <div id="social-media">
+	  <ul>
+	    <li><a href="#"><img src="images/social_media/facebook-icon.png" alt="share on facebook"></a></li>
+	    <li><a href="#"><img src="images/social_media/gmail-icon.png" alt="share on facebook"></a></li>
+	    <li><a href="#"><img src="images/social_media/Linkedin-icon.png" alt="share on facebook"></a></li>
+	    <li><a href="#"><img src="images/social_media/Twitter-icon.png" alt="share on facebook"></a></li>
+	  </ul>
+	  </div>
+	  	  <p id="copy-right">Copyright © 2018 Food Panda Restaurant Ltd. All rights reserved.</p>
+
+	</div>
+	</footer>
+<script src="js/javascript.js"></script>
+
+<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+<script type="text/javascript" src="js/giftcard.js" ></script>
+</body>
+</html>

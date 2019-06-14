@@ -1,0 +1,44 @@
+#container{
+	border: 1px solid #000;
+	width: auto;
+	height: auto;
+	text-align: center;
+	/*background-image: url("images/press-start.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	*/
+}
+#progress_bar{
+	border: 1px solid blue;
+	margin: 10px;
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+#box{
+	background-color: #98bf21;
+	height: 50px;
+	width: 1px;
+	border: 1px solid green;
+}
+#started{
+	text-align: center;
+	width: auto;
+	height: 600px;
+	border: 1px solid #000;
+	background-color: lightgreen;
+}
+#moveMe{
+	position: absolute;
+	margin-right: 1000px;
+	margin-top: 300px;
+}
+canvas{
+    border:1px solid #d3d3d3;
+    background-color: lightgreen;
+}
+#contest_title{
+	font:normal 2.5em Lucida Calligraphy, Helvetica, sans-serif;
+}

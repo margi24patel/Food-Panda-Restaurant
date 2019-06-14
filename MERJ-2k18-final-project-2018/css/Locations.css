@@ -1,0 +1,11 @@
+#map{
+    height: 500px;
+    width: 500px;
+}
+
+.description{
+    /*border: 1px solid lightgrey;*/
+    margin-top: 700px;
+    padding: 5px;
+    margin-bottom: 10px;
+}

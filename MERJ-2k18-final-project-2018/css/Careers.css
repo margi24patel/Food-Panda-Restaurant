@@ -1,0 +1,15 @@
+/*Careers.css File Margi Patel*/
+
+#container{
+    width: 1100px;
+	margin: 0 auto;
+	padding-top: 20px;
+	margin-bottom:50px;
+}
+body {
+	background-image:url("css_images/bg.png");
+}
+#careers_title{
+	font:normal 2.5em Lucida Calligraphy, Helvetica, sans-serif;
+}
+	

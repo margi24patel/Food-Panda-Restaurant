@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<title>Food Panda</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/contactus.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div class="page-wrapper">
+	    <a href="/"><img id="logo" src="images/Panda.png" alt="Restaurant Logo"></a>
+		<h2 id="logo_title">Food Panda</h2>
+	  
+	  <nav id="main-menu">
+          <h2 class="hidden">Main navigation</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="special.html">Special</a></li>
+            <li><a href="giftcard.html">Gift Cards</a></li>
+            <li><a href="EventBooking.html">Event Booking</a></li>
+            <li><a href="contest.html">Contest</a></li>
+            <li><a href="Location.html">Location</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="Careers.html">Careers</a></li>
+            <li><a href="sitemap.html">Site Map</a></li>
+          </ul>
+        </nav>
+	  </div>
+	</header>
+	<!-- Contact us page - By Jetal tandel -->
+	<section id="contactform" class="page-wrapper">
+	  <h2 id="formheader">Contact us</h2>
+	  <!-- Contact us form -->
+	  <form   name="infoForm" action="#" method="get" id="form">
+
+			<label for="name" >Enter Name</label>
+			<input type="text" id="name" name="f_name"/>
+		     
+			
+			<label for="email" >Email Address </label>
+			<input type="email" id="email" name="f_email" />
+			
+			
+			<label for="message" >Write your message </label>
+			<textarea type="text" id="message" name="f_message"></textarea>
+			
+			
+			<label for="location" >Select your Location</label>
+			   <select id="location">
+			       <option value="naigara">Naigara</option>
+                  <option value="scarbouough">Scarbouough</option>
+                  <option value="vaughn">Vaughn</option>
+                 </select>
+			
+		    
+			<button type="submit" value="Click to save" id="send">SUBMIT</button>
+		     
+	
+	</form>
+	<!-- OUTPUT MESSAGE (HIDDEN UNTIL FORM VALIDATES AND SUBMITTED)  -->
+	<div id="viewmessage"><!-- Thank you message -->
+	 </div>
+	</section>
+	
+	<footer id="footer">
+	<div class="page-wrapper">
+	<div class="col-1-footer">
+		<p id="logo_bottom">Food Panda</h2>
+	</div> 
+	  <div id="social-media">
+	  <ul>
+	    <li><a href="#"><img src="images/social_media/facebook-icon.png" alt="share on facebook"></a></li>
+	    <li><a href="#"><img src="images/social_media/gmail-icon.png" alt="share on facebook"></a></li>
+	    <li><a href="#"><img src="images/social_media/Linkedin-icon.png" alt="share on facebook"></a></li>
+	    <li><a href="#"><img src="images/social_media/Twitter-icon.png" alt="share on facebook"></a></li>
+	  </ul>
+	  </div>
+	  	  <p id="copy-right">Copyright © 2018 Food Panda Restaurant Ltd. All rights reserved.</p>
+
+	</div>
+	</footer>
+	
+<script src="js/contactus.js"></script>
+</body>
+</html>

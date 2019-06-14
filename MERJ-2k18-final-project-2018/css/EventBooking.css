@@ -1,0 +1,93 @@
+
+.flex-container {
+	display: flex;
+	flex-flow: row wrap;
+}
+#bookTable{
+	flex: 1 0 0;
+	border-radius: 100px;
+	margin: 10px;
+}
+#Reserve{
+	flex: 1 0 0;
+    border-radius: 100px;
+	margin: 20px;	
+}
+
+#overview{
+	flex : 1 0 0;
+	border-radius: 5px;
+}
+#main-event{
+	flex: 1 0 0;
+	border-radius: 5px;
+
+}
+#event_booking_title{
+	font:normal 2.5em Lucida Calligraphy, Helvetica, sans-serif;
+}
+
+#overview > h2,#main-event > h2, legend{
+	text-transform: uppercase;
+	text-align: center;
+}
+fieldset, input, textarea{
+	border-radius: 10px;
+}
+.reserve{
+	text-align: center;
+}
+#thnkmsg{
+	display: none;
+	text-align: center;
+	width: 25%;
+	border: 1px solid #9ca36f;
+	background-color: #9ca36f;
+	border-radius: 50px 50px 0px 50px;
+	color: white;
+	margin: 5px;
+	position: relative;
+}
+#customer_f_name{
+	color: black;
+	font-style: italic;
+}
+.swing{
+	animation: swing ease-in-out 1s infinite alternate;
+	transform-origin: center -20px;
+	float: left;
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+.swing img{
+	border: 5px solid #f8f8f8;
+	display: block;
+}
+.swing:after{
+    content: '';
+    position: absolute;  
+    width: 20px; height: 20px;  
+    border: 1px solid #999;
+    top: -10px; left: 50%;
+    z-index: 0;
+    border-bottom: none;
+    border-right: none;
+    transform: rotate(45deg);
+}
+/* nail */
+.swing:before{
+    content: '';
+    position: absolute;
+    width: 5px; height: 5px;
+    top: -14px;left: 51%;
+    z-index: 5;
+    border-radius: 50% 50%;
+    background: #000;
+}
+@keyframes swing{
+	0%{
+		transform: rotate(3deg);
+	}
+	100%{
+		transform: rotate(-3deg);
+	}
+}

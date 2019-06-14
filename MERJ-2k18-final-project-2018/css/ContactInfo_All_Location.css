@@ -1,0 +1,74 @@
+/* ContactInfo_All_Location.css File Margi Patel*/
+
+html {
+  box-sizing:border-box;
+  font-size:16px;
+}
+*, *::before, *::after {
+  box-sizing:inherit;
+}
+body {
+  margin:0;
+   
+  
+}
+.page-wrapper {
+  max-width:1300px;
+  margin:0 auto;
+  position:relative;
+}
+
+/*container*/
+#container{
+    width: 1100px;
+	margin: 0 auto;
+	padding-top: 20px;
+	
+}
+
+#location_vaughn_title{
+	font:normal 2.5em Lucida Calligraphy, Helvetica, sans-serif;
+}
+
+#location_scarborough_title{
+	font:normal 2.5em Lucida Calligraphy, Helvetica, sans-serif;
+}
+
+#location_niagara_title{
+	font:normal 2.5em Lucida Calligraphy, Helvetica, sans-serif;
+}
+
+
+.columns {
+  clear: both;
+  padding:20px 0;
+}
+
+#map_image{
+    width:70%;
+    float:left;
+    margin-right: 2%;
+
+}
+#contact_info{
+    width:28%;
+    float:right;
+    margin-top: 90px;
+}
+
+#social_media_location {
+	
+}
+#social_media_location ul {
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+#social_media_location li {
+  display:inline-block;
+  padding:15px 5px;
+  height:50px;
+  width:50px;
+  margin-top: 10px;
+}
+

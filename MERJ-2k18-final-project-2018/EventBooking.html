@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<title>Food Panda</title>
+	<link rel="stylesheet" type="text/css" href="css/global.css">
+  <link rel="stylesheet" type="text/css" href="css/EventBooking.css">
+
+  </head>
+  <body>
+    <header id="header">
+      <div class="page-wrapper">
+	    <a href="/"><img id="logo" src="images/Panda.png" alt="Restaurant Logo"></a>
+		<h2 id="logo_title">Food Panda</h2>
+	  
+	  <nav id="main-menu">
+          <h2 class="hidden">Main navigation</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="special.html">Special</a></li>
+            <li><a href="giftcard.html">Gift Cards</a></li>
+            <li><a href="EventBooking.html">Event Booking</a></li>
+            <li><a href="contest.html">Contest</a></li>
+            <li><a href="Location.html">Location</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="Careers.html">Careers</a></li>
+            <li><a href="sitemap.html">Site Map</a></li>
+          </ul>
+        </nav>
+	  </div>
+	</header>
+	<section>
+	<!-- Main section By Rabih Aoun-->
+    <div class="page-wrapper">
+	<h2 id="event_booking_title">Event Booking</h2>
+      <div class="flex-container">
+        <aside id="overview">
+		
+          <h2 id="heading1">Overview</h2>
+          <div id="overview-content">
+            
+            <p>
+              We offer the possibility of execlusive use of the resturant for an event reservation. Our dining room can accommodate private standing receptions for up to 100, and seated meals for up to 70 guests. Semi-private areas of the room, and large tables, are well suited for gatherings of 8 to 50. 
+            </p>
+            <h3>Catering</h3>
+            <p>
+              Let us bring the Food Panda resturant experience to you. Food Panda team can create a memorable event for you and your guests, whether it is in the initimacy of your home or in the middle of a field surrounded by nature.
+            </p>
+          </div>
+        </aside>
+		<!-- Event booking form -->
+        <main id="main-event">
+            <h2 id="heading2">Event Booking Request Form</h2>
+              <form action="#" method="post" name="myForm" id="eventForm">
+                <fieldset>
+                  <legend>Your Contact Information</legend>
+                  <p class="reserve">If your reservation date is less than 72 hours in advance, please call the resturant directly to make your booking. 416-416-4164</p>
+                  <p class="reserve">
+                    <label for="f_name">First Name</label>
+                    <input type="text" id="f_name" name="f_Name" />
+                  </p>
+                  <p class="reserve">  
+                    <label for="l_name">Last Name</label>
+                    <input type="text" id="l_name" name="l_Name" />
+                  </p>
+                  <p class="reserve">
+                    <label for="e_mail">Email Address</label>
+                    <input type="email" id="e_mail" name="e_Mail"><span class="Err_Msg"></span>
+                  </p>
+     
+                  <p class="reserve">
+                    <label for="phone_number">Phone Number</label>
+                    <input type="text" id="phone_number" name="phone_Number"><span class="Err_Msg"></span>
+                  </p>
+
+                  <p class="reserve">
+                    <label>How would you prefer to be contacted? </label>
+
+                  </p>
+
+                  <p class="reserve">
+                    <label for="event_date">Event Date</label>
+                    <input type="date" id="event_date" name="event_Date">
+                  </p>
+                  <p class="reserve">
+                    <label>Event Time</label>
+                    <select name="start_Time">
+                      <option value="3:00pm">3:00PM</option>
+                      <option value="3:30pm">3:30PM</option>                    
+                      <option value="4:00pm">4:00PM</option>
+                      <option value="4:30pm">4:30PM</option>
+                      <option value="5:00pm">5:00PM</option>
+                      <option value="5:30pm">5:30PM</option>                    
+                      <option value="6:00pm">6:00PM</option>
+                      <option value="6:30pm">6:30PM</option>
+                      <option value="7:00pm">7:00PM</option>
+                      <option value="7:30pm">7:30PM</option>
+                      <option value="8:00pm">8:00PM</option>
+                      <option value="8:30pm">8:30PM</option>
+                      <option value="9:00pm">9:00PM</option>
+                      <option value="9:30pm">9:30PM</option>
+                    </select>
+                  </p>
+                  <p class="reserve">
+                    <label for="people_number">Number of People</label>
+                    <input type="number" id="people_number" name="people_Number" max=10>
+                  </p>
+
+                  <p class="reserve">
+                    <label>Is there any more information you would like to add?</label><br>
+                    <textarea rows="4" cols="50"></textarea>
+                  </p>
+
+                  <p class="reserve">
+                    <input type="submit" value="Submit" name="submit">
+                  </p>                         
+                </fieldset>
+              </form>
+        </main>
+      </div>
+      <div class="flex-container">
+        <div class="swing">
+          <div id="bookTable">
+            <img src="images/book-a-table.jpg" alt="Book A Table" id="bookTable" width="600">
+          </div>
+        </div>
+        <div class="swing">
+          <div id="Reserve">
+            <img src="images/reserved.jpg" alt="Reserved" id="Reserve" width="500">
+          </div>
+        </div>
+      </div>
+    </div>
+
+	<!-- OUTPUT MESSAGE (HIDDEN UNTIL FORM VALIDATES AND SUBMITTED)  -->
+    <div id="thnkmsg">
+      <p>Thank you <span id="customer_f_name"></span> for submitting your request</p>
+	  </div>
+
+  </section>
+	
+	<footer id="footer">
+	<div class="page-wrapper">
+	<div class="col-1-footer">
+		<p id="logo_bottom">Food Panda</p>
+	</div> 
+	  <div id="social-media">
+	  <ul>
+	    <li><a href="#"><img src="images/social_media/facebook-icon.png" alt="share on facebook"></a></li>
+	    <li><a href="#"><img src="images/social_media/gmail-icon.png" alt="share on facebook"></a></li>
+	    <li><a href="#"><img src="images/social_media/Linkedin-icon.png" alt="share on facebook"></a></li>
+	    <li><a href="#"><img src="images/social_media/Twitter-icon.png" alt="share on facebook"></a></li>
+	  </ul>
+	  </div>
+	  	  <p id="copy-right">Copyright © 2018 Food Panda Restaurant Ltd. All rights reserved.</p>
+
+	</div>
+	</footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/EventBookingJS.js"></script>
+</body>
+</html>

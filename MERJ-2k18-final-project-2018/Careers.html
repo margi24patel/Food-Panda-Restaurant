@@ -1,0 +1,172 @@
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Food Panda</title>
+    
+    <link rel="stylesheet" type="text/css" href="css/global.css">
+	 <!--Careers.css - Margi Patel-->
+      <link href="css/Careers.css" rel="stylesheet" type="text/css" />
+	<style>#thanks_msg{display: none;}</style>
+    <script src="Careers.js" type="text/css"></script>
+</head>
+    
+    
+<body>
+    <!-- header part -->
+    <header id="header">
+      <div class="page-wrapper">
+	    <a href="/"><img id="logo" src="images/Panda.png" alt="Restaurant Logo"></a>
+		<h2 id="logo_title">Food Panda</h2>
+	  
+	  <nav id="main-menu">
+          <h2 class="hidden">Main navigation</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="special.html">Special</a></li>
+            <li><a href="giftcard.html">Gift Cards</a></li>
+            <li><a href="EventBooking.html">Event Booking</a></li>
+            <li><a href="contest.html">Contest</a></li>
+            <li><a href="Location.html">Location</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="Careers.html">Careers</a></li>
+            <li><a href="sitemap.html">Site Map</a></li>
+          </ul>
+        </nav>
+	  </div>
+	</header>
+    
+    <section>
+    <!-- Main Content Careers Form- Margi Patel -->
+     <div id="container" >
+    <h2 id="careers_title">Careers</h2>
+    <h2>Application Form for Employeement</h2>
+    
+    <form action="#" method="post" id="employeementForm" name="form_employeement">
+        
+    <fieldset>
+        <legend>Employeement Form</legend>
+        
+        <!-- First NAME -->
+		<p><label for="in_FName">First Name:</label>
+		<input type="text" id="in_FName" name="f_fname" />
+        </p>
+        
+        <!-- Last NAME -->
+		<p><label for="in_LName">Last Name:</label>
+		<input type="text" id="in_LName" name="f_lname" />
+        </p>
+        
+        <!-- Address -->
+		<label>Address:</label>
+        <p><label for="in_streetName">Street Name:</label>
+        <input type="text" id="in_streetName" name="f_street"/>
+        </p>
+        
+         <!-- City -->
+        <p><label for="in_City">City:</label>
+        <input type="text" id="in_City" name="f_city"/>
+        </p>
+        
+        
+         <!-- Province -->
+        <p><label for="in_Province">Province:</label>
+        <select id="in_Province" name="f_province">
+             <option value="ON">Ontario</option>
+             <option value="AB">Alberta</option>
+             <option value="QB">Qubec</option>
+             <option value="BC">British Columbia</option>
+        </select>
+        </p>
+            
+        <!-- POSTAL CODE -->
+		<p><label for="in_pc">Postal Code:</label>
+		<input type="text" id="in_pc" name="f_pc" />&nbsp;&nbsp;(Canada Only)
+        </p>
+        
+         <!-- Phone -->
+        <p><label for="in_PhoneNo">Phone No.:</label>
+        <input type="text" id="in_PhoneNo" name="f_phone"/>&nbsp;&nbsp;(e.g. 4171232757)
+        </p>
+        
+        <!-- MailId -->
+        <p><label for="in_EMail">Email Id:</label>
+        <input type="text" id="in_EMail" name="f_email"/>&nbsp;&nbsp;(e.g. me@example.com)
+        </p>
+        
+        <!-- Position -->
+        <p><label>For Which Position Are You Applying?</label>
+            
+            <input type="checkbox" value="in_bartender" name="f_bartender" > 
+            <label for="in_bartender">Bartender</label>
+            <input type="checkbox" value="in_prepcook" name="f_prepcook" > 
+            <label for="in_prepcook">Prep Cook</label>
+            <input type="checkbox" value="in_dishwasher" name="f_dishwasher" > 
+            <label for="in_dishwasher">Dishwasher</label>
+        </p>
+        
+        <!-- Work -->
+        <p><label>I Want To Work</label>
+            
+            <input type="checkbox" value="in_parttime" name="f_parttime" > 
+            <label for="in_parttime">PartTime</label>
+            <input type="checkbox" value="in_fulltime" name="f_fulltime" > 
+            <label for="in_fulltime">FullTime</label>
+        </p>
+        
+        <!-- Location -->
+        <p><label for="in_location">For Which Location Are You Applying:</label>
+        <select id="in_location" name="f_location">
+            <!--<option id="" value="" selected="selected">--Select--</option>-->
+
+             <option value="VG">Vaughan</option>
+             <option value="SB">Scarborough</option>
+             <option value="NG">Niagara</option>
+        </select>
+        </p>
+        
+        <!-- SUBMIT -->
+	    <p>
+		<input type="submit" value="Submit" name="submit" />
+	    </p>
+        
+        </fieldset>
+    </form>
+    
+    
+     <!-- OUTPUT MESSAGE (HIDDEN UNTIL FORM VALIDATES AND SUBMITTED)  -->
+        <div id="thanks_msg">
+	    <h2><!--Thank you--> <span id="thanksEmployee"></span> <!--for your Interests! We will response you on --><span id="mail"></span> </h2>
+        </div>
+         
+         </div>
+    </section>
+    </body>
+    
+    <!-- Footer-->
+    
+    <footer id="footer">
+	<div class="page-wrapper">
+	<div class="col-1-footer">
+		<p id="logo_bottom">Food Panda</p>
+	</div> 
+	  <div id="social-media">
+	  <ul>
+	    <li><a href="#"><img src="images/social_media/facebook-icon.png" alt="share on facebook"></a></li>
+	    <li><a href="#"><img src="images/social_media/gmail-icon.png" alt="share on facebook"></a></li>
+	    <li><a href="#"><img src="images/social_media/Linkedin-icon.png" alt="share on facebook"></a></li>
+	    <li><a href="#"><img src="images/social_media/Twitter-icon.png" alt="share on facebook"></a></li>
+	  </ul>
+	  </div>
+	  	  <p id="copy-right">Copyright © 2018 Food Panda Restaurant Ltd. All rights reserved.</p>
+
+	</div>
+	</footer>
+    
+    
+    <!-- JavaScript File Careers.js -Margi Patel -->
+    <script type="text/javascript" src="js/Careers.js"></script> 
+</html>

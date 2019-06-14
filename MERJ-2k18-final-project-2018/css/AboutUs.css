@@ -1,0 +1,135 @@
+/*AboutUs.css File Margi Patel*/
+@charset "utf-8";
+ * {
+    box-sizing: border-box;
+}
+
+img{
+    width:100%;
+    height: auto;
+}
+body{
+    background-color: white;
+}
+
+#banner_img_about_us{
+    border: 2px solid green;
+}
+
+#aboutUs{
+    
+	/*display: none;*/
+	background-color: lightgrey;
+	border: 3px solid black;
+	box-shadow: 2px 5px 5px #8C0000;
+	text-align: center;	
+	padding: 10px;
+	width: 120px;
+	height: 120px;
+	border-radius: 10px;
+   margin-right: 50px;
+    margin-left: 50px
+}
+
+#aboutUs :hover {
+    color:darkolivegreen;
+ }
+
+#oueChefs:hover{
+    color:darkolivegreen;
+}
+#ourGoodStory:hover{
+    color:darkolivegreen;
+}
+
+#aboutUs,#oueChefs,#ourGoodStory{
+    float: left;
+    margin-right: 60px;
+    margin-left: 50px;
+    
+}
+#oueChefs{
+	/*display: none;*/
+	background-color: lightgrey;
+	border: 3px solid black;
+	box-shadow: 2px 5px 5px #8C0000;
+	text-align: center;	
+	padding: 10px;
+	width:120px;
+	height: 120px;
+	border-radius: 10px;
+    
+
+}
+
+#ourGoodStory{
+	display:block;
+	background-color: lightgrey;
+	border: 3px solid black;
+	box-shadow: 2px 5px 5px #8C0000;
+	text-align: center;	
+	
+	width: 120px;
+	height: 120px;
+	border-radius: 10px;
+ 
+}
+#show_info_box{
+  /*  background: lightblue;*/
+    border: 2px dotted black;
+    text-align: center;	
+	padding: 10px;
+	margin-left: 7px;;
+	height: 350px;
+	border-radius: 10px;
+    background-color: pink;
+    margin-top: 30px;
+    /*width:1100px;*/
+    font-style: italic;
+}
+
+#block_container:after{
+
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#container{
+    width: 1100px;
+	margin: 0 auto;
+	padding-top: 20px;
+	margin-bottom:20px;
+}
+
+#banner_img_about_us{
+    padding: 10px;
+	background: #c0c0c0;
+    margin-top: 30px;
+}
+#banner_img_about_us img{
+    display: block;
+	margin-bottom: 10px;
+}
+
+#banner_img_about_us::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+
+#aboutUs_title{
+	font:normal 2.5em Lucida Calligraphy, Helvetica, sans-serif;
+}
+
+
+#block_container{
+    margin: 20px 250px;
+}
